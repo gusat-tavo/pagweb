@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pagina Web</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<style>
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size:100%;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background:#333;
+    color:#eee;
+    width:100%;
+}
+
+input#abrir-cerrar {
+    visibility:hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+
+label[for="abrir-cerrar"] {
+    cursor:pointer;
+    padding: 1rem;
+    background-color:#333;
+    color:#fff;
+    display:inline-block;
+    width:100%;
+
+}
+
+.cerrar {
+    display:none;
+}
+
+#sidebar {
+    width:0;
+}
+
+#contenido {
+    margin-left:0;
+}
+
+input#abrir-cerrar:checked ~ #sidebar {
+    width:300px;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+    margin-left:300px;
+    transition: margin-left .4s;
+}
+
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+    display:inline;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+    display:none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #f90;
+
+}
+
+h1 {
+    color:#f90;
+    font-size:180%;
+    font-weight:normal;
+}
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
+
+
+</style>
+
+
+</head>
+<body>
+<style>img {display:block}</style>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label for="abrir-cerrar">&#9776; <span class="abrir">Abrir</span><span class="cerrar">Cerrar</span></label>
+<center><FONT SIZE="+3" face="time new roman"> <B><U><br> Danza </U></B> </center> </FONT>
+<div id="sidebar" class="sidebar">
+
+<center><body background="F:\Pagina web\Imagenes de fondo y otros\f.jpg", text="white", ></center>
+
+        <ul class="menu">
+            <li><a href="Inicio.htm">Inicio</a></li>
+            <li><a href="Danza.htm">Danza</a></li>
+            <li><a href="Pandemia.htm">Pandemia</a></li>
+            <li><a href="Otros.htm">Otros</a></li>
+            <li><a href="Redes.htm">Redes Sociales</a></li>
+   	    <li><a href="F1.html">Formulario</a></li>
+        </ul>
+    </div>
+    <div id="contenido">
+</div>
+<pre><font size="3" face="time new roman"><div align="left">						    Soy bailarin del grupo de Danzas y Proyecciones Fokloricas Andres Valiente de Colon, dirigido por:  Dr. Eduardo Hansell</pre></div>
+
+<center><img src="F:\Pagina web\Danza\Andres Valiente.jpg" WIDTH="200" HEIGHT="280" border="2"></center>
+
+<pre><font size="3" face="time new roman"><div align="left">						    Mis inicios como bailarin fueron dificiles, en primer lugar fui obligado por mi mama porque decia que tenia 2 pies izquierdo; empece bailando
+						    en el conjunto tipico del colegio Bilingue Eben-Ezer, luego pase a bailar en el grupo Andres Valiente, al principio fue dificil y no tenia animos de seguir 
+						    bailando, pero a la final me gusto porque he tenido la posibilidad de viajar a muchos paises.</pre></div>
+
+<pre><font size="5" face="time new roman"><div align="left">					Paises como:</pre></div>
+<pre><font size="5" face="time new roman"><div align="left">						    Argentina:</pre></div>
+<center><img src="F:\Pagina web\Danza\Argentina.jpg" WIDTH="200" HEIGHT="280"></center>
+
+<pre><font size="5" face="time new roman"><div align="left">						    México:</pre></div>
+
+<center>
+<img src="F:\Pagina web\Danza\Mexico.jpg" WIDTH="200" HEIGHT="280">
+<img src="F:\Pagina web\Danza\Mexico1.jpg" WIDTH="200" HEIGHT="280">
+</center>
+
+<pre><font size="5" face="time new roman"><div align="left">						    Perú:</pre></div>
+<center><img src="F:\Pagina web\Danza\Peru.jpg" WIDTH="200" HEIGHT="280"></center> <center><img src="F:\Pagina web\Danza\Peru1.jpg" WIDTH="200" HEIGHT="280"></center> <center><img src="F:\Pagina web\Danza\Peru2.jpg" WIDTH="200" HEIGHT="280"></center>
+
+<pre><font size="5" face="time new roman"><div align="left">						    España:</pre></div>
+<center><img src="F:\Pagina web\Danza\Espana.jpg" WIDTH="200" HEIGHT="280"></center>
+
+<pre><font size="5" face="time new roman"><div align="left">						    Hungria y Ucrania:</pre></div>
+<center><img src="F:\Pagina web\Danza\Hungria.jpg" WIDTH="200" HEIGHT="280"></center> <center><img src="F:\Pagina web\Danza\Ucrania.jpg" WIDTH="200" HEIGHT="280"></center>
+
+
+<pre><font size="3" face="Lucida Calligraphy"><div align="left">  																					Creada por Luis G. Góndola R. </pre></div>
+
+</body>
+</html> 
